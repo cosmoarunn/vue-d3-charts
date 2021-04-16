@@ -4,7 +4,26 @@
   "description": "Implementation of d3.js in vue",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && node dist/index.js",
+    "test": "npm run test",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^14.11.2", 
+    "commander": "^6.1.0",
+    "lodash": "^4.17.20",
+    "mocha": "^8.1.3",
+    "node-ssh": "^11.1.1",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0",
+    "tedious": "^9.2.1",
+    "typescript": "^4.0.3",
+    "yarn": "^1.22.10",
+    "zeromq": "^6.0.0-beta.6"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.161",
+    "ts-node": ">= 0"
   },
   "repository": {
     "type": "git",
